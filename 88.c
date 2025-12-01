@@ -1,0 +1,24 @@
+//Replace spaces with hyphens in a string.
+
+/*
+Sample Test Case
+Input 1:
+hello world
+Output 1:
+hello-world
+*/
+
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    scanf("%[^\n]", str);  
+
+    for(int i = 0; str[i] != '\0'; i++) {
+        if(str[i] == ' ')
+            str[i] = '-';
+    }
+
+    printf("%s", str);
+    return 0;
+}
